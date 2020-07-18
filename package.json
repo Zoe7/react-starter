@@ -17,6 +17,8 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "eslint-plugin-simple-import-sort": "^5.0.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -31,7 +33,7 @@
     "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|tsx|)\"",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx|json|)\"",
     "format": "yarn run prettier --write",
-    "check-format": "yarn run prettier --list-different",
+    "check-format": "yarn run prettier --list-different"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +48,18 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.tsx": [
+      "yarn run format",
+      "yarn run lint --fix",
+      "yarn test --watchAll=false --passWithNoTests --findRelatedTests"
     ]
   }
 }

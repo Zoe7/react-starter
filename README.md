@@ -10,6 +10,7 @@ It includes:
 - [ ] [Storybook](https://storybook.js.org/)
 - [x] [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) and [jest-dom](https://github.com/testing-library/jest-dom)
 - [ ] [Charka-ui](https://chakra-ui.com/)
+- [x] Pre-commit hook checking for prettier formatting, eslint, and tests
 
 ## Available Scripts
 
