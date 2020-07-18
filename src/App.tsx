@@ -1,7 +1,8 @@
+import { Text } from '@chakra-ui/core'
 import React from 'react'
 
 function App() {
-  return <div>Hello world!</div>
+  return <Text fontSize="4xl">Hello World!</Text>
 }
 
 export default App

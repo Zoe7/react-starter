@@ -1,3 +1,4 @@
+import { Button as ChakraButton } from '@chakra-ui/core'
 import React, { ReactNode } from 'react'
 
 type Props = {
@@ -7,8 +8,8 @@ type Props = {
 
 export const Button = ({ children, onClick }: Props) => {
   return (
-    <button onClick={onClick} type="button">
+    <ChakraButton variantColor="green" onClick={onClick}>
       {children}
-    </button>
+    </ChakraButton>
   )
 }
