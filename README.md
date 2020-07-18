@@ -5,7 +5,7 @@ This project was created to serve as a starter repository, including all the lib
 It includes:
 
 - [x] [Create React App typescript template.](https://create-react-app.dev/docs/adding-typescript).
-- [ ] [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/)
+- [x] [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/)
 - [ ] [React Router](https://reactrouter.com/)
 - [ ] [Storybook](https://storybook.js.org/)
 - [x] [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) and [jest-dom](https://github.com/testing-library/jest-dom)
@@ -37,3 +37,20 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn lint`
+
+Checks whether the code complies with linting rules.
+Pass the `--fix` flag to this script to automatically fix issues.
+
+### `yarn prettier`
+
+Run the prettier command on `.ts`, `.tsx` and `.json` which are not listed in `gitignore`.
+
+### `yarn check-format`
+
+Checks if any file targeted by the `prettier` script doesn't pass prettier formatting
+
+### `yarn format`
+
+Automatically format all files targeted by the `prettier` script.
