@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-docs": "^5.3.19",
     "@testing-library/jest-dom": "^5.11.1",
     "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^12.0.11",
@@ -33,7 +34,9 @@
     "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|tsx|)\"",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx|json|)\"",
     "format": "yarn run prettier --write",
-    "check-format": "yarn run prettier --list-different"
+    "check-format": "yarn run prettier --list-different",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +64,12 @@
       "yarn run lint --fix",
       "yarn test --watchAll=false --passWithNoTests --findRelatedTests"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^5.3.19"
   }
 }
