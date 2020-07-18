@@ -1,10 +1,10 @@
 # react-starter
 
-This project was created to serve as a starter repository, including all the libraries and tools that like to use.
+This project was created to serve as a React starter repository, including all the libraries and tools that like to use.
 
 It includes:
 
-- [x] [Create React App typescript template.](https://create-react-app.dev/docs/adding-typescript).
+- [x] [Create React App typescript template](https://create-react-app.dev/docs/adding-typescript).
 - [x] [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/)
 - [x] [React Router](https://reactrouter.com/)
 - [x] [Storybook](https://storybook.js.org/)
