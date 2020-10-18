@@ -8,7 +8,7 @@ type Props = {
 
 export const Button = ({ children, onClick }: Props) => {
   return (
-    <ChakraButton variantColor="green" onClick={onClick}>
+    <ChakraButton variantColor="green" width="200px" onClick={onClick}>
       {children}
     </ChakraButton>
   )
